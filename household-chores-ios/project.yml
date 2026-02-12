@@ -1,0 +1,37 @@
+name: HouseholdChoresApp
+options:
+  minimumXcodeGenVersion: 2.44.1
+  deploymentTarget:
+    iOS: "17.0"
+
+targets:
+  HouseholdChoresApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: HouseholdChoresApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.bmad.householdchores
+        SWIFT_VERSION: 5.9
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription: "Used to manage Adam pickup and dropoff events."
+        INFOPLIST_KEY_NSCalendarsWriteOnlyUsageDescription: "Used to create and edit Adam pickup and dropoff events."
+    scheme:
+      testTargets:
+        - HouseholdChoresAppTests
+
+  HouseholdChoresAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: HouseholdChoresAppTests
+    dependencies:
+      - target: HouseholdChoresApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.bmad.householdchores.tests
+        SWIFT_VERSION: 5.9

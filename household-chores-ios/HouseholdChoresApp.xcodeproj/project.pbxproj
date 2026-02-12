@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0517512C7886A1CFC0AFE06B /* Chore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E91DF268D908617417064E /* Chore.swift */; };
+		07B4F72ABBE4308540D27104 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72F7D7A405526AFBB3A2E45 /* SettingsView.swift */; };
+		0B4FA38E68217AA2044CCEA0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C60315FC0858B463787BC7A /* Person.swift */; };
+		10601A53203D8E354A0A95C2 /* ScoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60007CE902B980E341079296 /* ScoresViewModel.swift */; };
+		1B1664C3A1917A52065BCDAE /* MonthlyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A02C9313B4E1BAEFC4C6B9E /* MonthlyResult.swift */; };
+		257644E98253501442FEF999 /* ChoresListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A29020EE5F3BBFF093C1E /* ChoresListView.swift */; };
+		3674F7223C249660BB75FA93 /* ScoringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3FB1A1BCA166C88F68C59 /* ScoringService.swift */; };
+		38A94F27EE77E6D486C1F3C4 /* ChoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92607E7C7FA8704235FCEF3D /* ChoresViewModel.swift */; };
+		3B1729EA961169F064AB3C39 /* HouseholdChoresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912776500365CED7D68DE9B /* HouseholdChoresApp.swift */; };
+		5EB7F5DB130E47561C812DC3 /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B920C6EEDE8EDC6C37771B /* Completion.swift */; };
+		6F641D998E70147724A91F33 /* JSONExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFB7049D627A1177347BC5 /* JSONExportDocument.swift */; };
+		70C02EF0455A172F283560F4 /* PersonPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889034088B40FDD5152E1EF /* PersonPickerView.swift */; };
+		777FBE58800CE9A58C60FC51 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55EE54A8AAFB44A95D8952 /* CalendarService.swift */; };
+		79BE93EE71C62DB0D4FF5863 /* SeedDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D79E7292B161E6CB9ED59D4 /* SeedDataLoader.swift */; };
+		A345C7EE0A090233FD1B0D23 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50F435B8030FC73A115833 /* RootTabView.swift */; };
+		A7DF883835FB0139A3B54A39 /* MonthPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B12395E2EACE74B9136961A /* MonthPickerView.swift */; };
+		A9C1435B5AE3182FE004A775 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B912CEEE37B87BF0892828B9 /* HomeViewModel.swift */; };
+		ABB741C0F2E3459EE678585A /* CalendarEventEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5689B3EC83E2D18065BA19 /* CalendarEventEditorView.swift */; };
+		ACC626631FC31BB28B33A968 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52577D38B006E7A7F95CA66A /* DataTransferService.swift */; };
+		B512617251C1081D401D6DE5 /* MonthKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DE5C75F7CB520E14BF97FA /* MonthKey.swift */; };
+		BAD008358707114696C51E72 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A01862276CCD381601250D /* CalendarView.swift */; };
+		BE15ABC84D9ABC017853C31F /* DataTransferMergeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EE60209974A709BF999579 /* DataTransferMergeTests.swift */; };
+		C40B5291440DFF92995B31CE /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC5E926D8F80D2B6D45D4C /* CalendarViewModel.swift */; };
+		D162DE20EBE2882D07C5CE39 /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406247FB6928F0FC2DD446E /* ScoresView.swift */; };
+		D4A207B5B23556A54C355780 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE49BA42E84E2887038D54 /* AppContainer.swift */; };
+		DE604D8E095747089308B41C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D920DE42CDAA7903E4B549B /* HomeView.swift */; };
+		E130C0841A56044BFC10DAC5 /* MonthCloseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6401C2ECD42D6D2760FF164D /* MonthCloseTests.swift */; };
+		E8839BCE85BF9F5D56153A13 /* ChoreEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A0717B9273B08A1657935 /* ChoreEditorView.swift */; };
+		EA1F23282A3A0912DD590D8B /* JSONImportParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EBDF430AE8ADAE181F230F /* JSONImportParser.swift */; };
+		EC1BAA9BBEA20B6F6F204573 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433C0B81E3EE1D35D79BECA9 /* SettingsViewModel.swift */; };
+		F1BD69A6257CC2E56FED610F /* AdamEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF59FE22A25B12F8F2C80CA /* AdamEventType.swift */; };
+		F3BCBA31406E64E852BCEAD1 /* MonthKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067E4A31AA5DD7C59050E7D6 /* MonthKeyTests.swift */; };
+		FA250EF91FE96978916F0A1E /* ScoringServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3CE1A6E1EA0791B737ABE /* ScoringServiceTests.swift */; };
+		FB19640DF26908D0C9B0B5C4 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E2E4A8AE03A0B228D1DB65 /* HistoryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDE62E4CFE9200FA0D4AAFB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A68DF27E51642B73C2256CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44CCB4C2B5831A994B5D1E0C;
+			remoteInfo = HouseholdChoresApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		067E4A31AA5DD7C59050E7D6 /* MonthKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthKeyTests.swift; sourceTree = "<group>"; };
+		0C6AD5739B3546BA29FA7A15 /* HouseholdChoresApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HouseholdChoresApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E50F435B8030FC73A115833 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		14AC5E926D8F80D2B6D45D4C /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		196A0717B9273B08A1657935 /* ChoreEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreEditorView.swift; sourceTree = "<group>"; };
+		24EBDF430AE8ADAE181F230F /* JSONImportParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONImportParser.swift; sourceTree = "<group>"; };
+		2D920DE42CDAA7903E4B549B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		32E91DF268D908617417064E /* Chore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chore.swift; sourceTree = "<group>"; };
+		360F5C4D9082567996BC33A6 /* HouseholdChoresAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HouseholdChoresAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD3CE1A6E1EA0791B737ABE /* ScoringServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringServiceTests.swift; sourceTree = "<group>"; };
+		433C0B81E3EE1D35D79BECA9 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		52577D38B006E7A7F95CA66A /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		5AF59FE22A25B12F8F2C80CA /* AdamEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdamEventType.swift; sourceTree = "<group>"; };
+		5BFFB7049D627A1177347BC5 /* JSONExportDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONExportDocument.swift; sourceTree = "<group>"; };
+		5C55EE54A8AAFB44A95D8952 /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+		5D79E7292B161E6CB9ED59D4 /* SeedDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedDataLoader.swift; sourceTree = "<group>"; };
+		60007CE902B980E341079296 /* ScoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewModel.swift; sourceTree = "<group>"; };
+		6401C2ECD42D6D2760FF164D /* MonthCloseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCloseTests.swift; sourceTree = "<group>"; };
+		6406247FB6928F0FC2DD446E /* ScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresView.swift; sourceTree = "<group>"; };
+		6A02C9313B4E1BAEFC4C6B9E /* MonthlyResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyResult.swift; sourceTree = "<group>"; };
+		6EEE49BA42E84E2887038D54 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		78B920C6EEDE8EDC6C37771B /* Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
+		80A01862276CCD381601250D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		86DE5C75F7CB520E14BF97FA /* MonthKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthKey.swift; sourceTree = "<group>"; };
+		87E3FB1A1BCA166C88F68C59 /* ScoringService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringService.swift; sourceTree = "<group>"; };
+		8B12395E2EACE74B9136961A /* MonthPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerView.swift; sourceTree = "<group>"; };
+		8C60315FC0858B463787BC7A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		92607E7C7FA8704235FCEF3D /* ChoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresViewModel.swift; sourceTree = "<group>"; };
+		98EE60209974A709BF999579 /* DataTransferMergeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferMergeTests.swift; sourceTree = "<group>"; };
+		9912776500365CED7D68DE9B /* HouseholdChoresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdChoresApp.swift; sourceTree = "<group>"; };
+		9B5689B3EC83E2D18065BA19 /* CalendarEventEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventEditorView.swift; sourceTree = "<group>"; };
+		B8E2E4A8AE03A0B228D1DB65 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		B912CEEE37B87BF0892828B9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DD5A29020EE5F3BBFF093C1E /* ChoresListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresListView.swift; sourceTree = "<group>"; };
+		E72F7D7A405526AFBB3A2E45 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E889034088B40FDD5152E1EF /* PersonPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPickerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		148852BE370B23F3D5A9CD0F /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				9B5689B3EC83E2D18065BA19 /* CalendarEventEditorView.swift */,
+				80A01862276CCD381601250D /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		1D2F3889320475B63AEA5843 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8B12395E2EACE74B9136961A /* MonthPickerView.swift */,
+				E889034088B40FDD5152E1EF /* PersonPickerView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1F2FBE2FC5EBF65A803F3A0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AF59FE22A25B12F8F2C80CA /* AdamEventType.swift */,
+				32E91DF268D908617417064E /* Chore.swift */,
+				78B920C6EEDE8EDC6C37771B /* Completion.swift */,
+				6A02C9313B4E1BAEFC4C6B9E /* MonthlyResult.swift */,
+				8C60315FC0858B463787BC7A /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		277A08CA2785BBCC23147D63 = {
+			isa = PBXGroup;
+			children = (
+				EAC0EDBAF49FB7B11C00A7D7 /* HouseholdChoresApp */,
+				93740BCD106EFC612FC1C4BA /* HouseholdChoresAppTests */,
+				E436ED60DBF70EF7022968AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AF2672A992529E1851EDB86 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E72F7D7A405526AFBB3A2E45 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3B6479859E2CF09DA601D324 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				B8E2E4A8AE03A0B228D1DB65 /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		3D05F02560A24C43E9283C9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				148852BE370B23F3D5A9CD0F /* Calendar */,
+				5BBA8B7FF2B5A27CE5111EC1 /* Chores */,
+				3B6479859E2CF09DA601D324 /* History */,
+				4E1E441998833FE65033C016 /* Home */,
+				ED850184344396BE81F4F05A /* Scores */,
+				2AF2672A992529E1851EDB86 /* Settings */,
+				1D2F3889320475B63AEA5843 /* Shared */,
+				446234F41611C841017DB85F /* Tabs */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		446234F41611C841017DB85F /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				0E50F435B8030FC73A115833 /* RootTabView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		4BA01BCEB1878E4E3BBD3F31 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				14AC5E926D8F80D2B6D45D4C /* CalendarViewModel.swift */,
+				92607E7C7FA8704235FCEF3D /* ChoresViewModel.swift */,
+				B912CEEE37B87BF0892828B9 /* HomeViewModel.swift */,
+				60007CE902B980E341079296 /* ScoresViewModel.swift */,
+				433C0B81E3EE1D35D79BECA9 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4E1E441998833FE65033C016 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2D920DE42CDAA7903E4B549B /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5BBA8B7FF2B5A27CE5111EC1 /* Chores */ = {
+			isa = PBXGroup;
+			children = (
+				196A0717B9273B08A1657935 /* ChoreEditorView.swift */,
+				DD5A29020EE5F3BBFF093C1E /* ChoresListView.swift */,
+			);
+			path = Chores;
+			sourceTree = "<group>";
+		};
+		769A809AA57C727332C0E65F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5BFFB7049D627A1177347BC5 /* JSONExportDocument.swift */,
+				24EBDF430AE8ADAE181F230F /* JSONImportParser.swift */,
+				5D79E7292B161E6CB9ED59D4 /* SeedDataLoader.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		93740BCD106EFC612FC1C4BA /* HouseholdChoresAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				98EE60209974A709BF999579 /* DataTransferMergeTests.swift */,
+				6401C2ECD42D6D2760FF164D /* MonthCloseTests.swift */,
+				067E4A31AA5DD7C59050E7D6 /* MonthKeyTests.swift */,
+				3DD3CE1A6E1EA0791B737ABE /* ScoringServiceTests.swift */,
+			);
+			path = HouseholdChoresAppTests;
+			sourceTree = "<group>";
+		};
+		973E01CFEC7048C7EE284054 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5C55EE54A8AAFB44A95D8952 /* CalendarService.swift */,
+				52577D38B006E7A7F95CA66A /* DataTransferService.swift */,
+				86DE5C75F7CB520E14BF97FA /* MonthKey.swift */,
+				87E3FB1A1BCA166C88F68C59 /* ScoringService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E436ED60DBF70EF7022968AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C6AD5739B3546BA29FA7A15 /* HouseholdChoresApp.app */,
+				360F5C4D9082567996BC33A6 /* HouseholdChoresAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAC0EDBAF49FB7B11C00A7D7 /* HouseholdChoresApp */ = {
+			isa = PBXGroup;
+			children = (
+				6EEE49BA42E84E2887038D54 /* AppContainer.swift */,
+				9912776500365CED7D68DE9B /* HouseholdChoresApp.swift */,
+				1F2FBE2FC5EBF65A803F3A0D /* Models */,
+				973E01CFEC7048C7EE284054 /* Services */,
+				769A809AA57C727332C0E65F /* Support */,
+				4BA01BCEB1878E4E3BBD3F31 /* ViewModels */,
+				3D05F02560A24C43E9283C9F /* Views */,
+			);
+			path = HouseholdChoresApp;
+			sourceTree = "<group>";
+		};
+		ED850184344396BE81F4F05A /* Scores */ = {
+			isa = PBXGroup;
+			children = (
+				6406247FB6928F0FC2DD446E /* ScoresView.swift */,
+			);
+			path = Scores;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38A80FA614264D671EC423ED /* HouseholdChoresAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AA8CFC985353390AD0EC85C /* Build configuration list for PBXNativeTarget "HouseholdChoresAppTests" */;
+			buildPhases = (
+				E9EDA6890BA9A38101254FA4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C39ED65A72FB3D8E40861086 /* PBXTargetDependency */,
+			);
+			name = HouseholdChoresAppTests;
+			packageProductDependencies = (
+			);
+			productName = HouseholdChoresAppTests;
+			productReference = 360F5C4D9082567996BC33A6 /* HouseholdChoresAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44CCB4C2B5831A994B5D1E0C /* HouseholdChoresApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 755134C709FBD49888866134 /* Build configuration list for PBXNativeTarget "HouseholdChoresApp" */;
+			buildPhases = (
+				3B622ABB3ABB0B91011A81BF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HouseholdChoresApp;
+			packageProductDependencies = (
+			);
+			productName = HouseholdChoresApp;
+			productReference = 0C6AD5739B3546BA29FA7A15 /* HouseholdChoresApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A68DF27E51642B73C2256CD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = BC45A07F9F5C27CDE4CF5AED /* Build configuration list for PBXProject "HouseholdChoresApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 277A08CA2785BBCC23147D63;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44CCB4C2B5831A994B5D1E0C /* HouseholdChoresApp */,
+				38A80FA614264D671EC423ED /* HouseholdChoresAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B622ABB3ABB0B91011A81BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BD69A6257CC2E56FED610F /* AdamEventType.swift in Sources */,
+				D4A207B5B23556A54C355780 /* AppContainer.swift in Sources */,
+				ABB741C0F2E3459EE678585A /* CalendarEventEditorView.swift in Sources */,
+				777FBE58800CE9A58C60FC51 /* CalendarService.swift in Sources */,
+				BAD008358707114696C51E72 /* CalendarView.swift in Sources */,
+				C40B5291440DFF92995B31CE /* CalendarViewModel.swift in Sources */,
+				0517512C7886A1CFC0AFE06B /* Chore.swift in Sources */,
+				E8839BCE85BF9F5D56153A13 /* ChoreEditorView.swift in Sources */,
+				257644E98253501442FEF999 /* ChoresListView.swift in Sources */,
+				38A94F27EE77E6D486C1F3C4 /* ChoresViewModel.swift in Sources */,
+				5EB7F5DB130E47561C812DC3 /* Completion.swift in Sources */,
+				ACC626631FC31BB28B33A968 /* DataTransferService.swift in Sources */,
+				FB19640DF26908D0C9B0B5C4 /* HistoryView.swift in Sources */,
+				DE604D8E095747089308B41C /* HomeView.swift in Sources */,
+				A9C1435B5AE3182FE004A775 /* HomeViewModel.swift in Sources */,
+				3B1729EA961169F064AB3C39 /* HouseholdChoresApp.swift in Sources */,
+				6F641D998E70147724A91F33 /* JSONExportDocument.swift in Sources */,
+				EA1F23282A3A0912DD590D8B /* JSONImportParser.swift in Sources */,
+				B512617251C1081D401D6DE5 /* MonthKey.swift in Sources */,
+				A7DF883835FB0139A3B54A39 /* MonthPickerView.swift in Sources */,
+				1B1664C3A1917A52065BCDAE /* MonthlyResult.swift in Sources */,
+				0B4FA38E68217AA2044CCEA0 /* Person.swift in Sources */,
+				70C02EF0455A172F283560F4 /* PersonPickerView.swift in Sources */,
+				A345C7EE0A090233FD1B0D23 /* RootTabView.swift in Sources */,
+				D162DE20EBE2882D07C5CE39 /* ScoresView.swift in Sources */,
+				10601A53203D8E354A0A95C2 /* ScoresViewModel.swift in Sources */,
+				3674F7223C249660BB75FA93 /* ScoringService.swift in Sources */,
+				79BE93EE71C62DB0D4FF5863 /* SeedDataLoader.swift in Sources */,
+				07B4F72ABBE4308540D27104 /* SettingsView.swift in Sources */,
+				EC1BAA9BBEA20B6F6F204573 /* SettingsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9EDA6890BA9A38101254FA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE15ABC84D9ABC017853C31F /* DataTransferMergeTests.swift in Sources */,
+				E130C0841A56044BFC10DAC5 /* MonthCloseTests.swift in Sources */,
+				F3BCBA31406E64E852BCEAD1 /* MonthKeyTests.swift in Sources */,
+				FA250EF91FE96978916F0A1E /* ScoringServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C39ED65A72FB3D8E40861086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44CCB4C2B5831A994B5D1E0C /* HouseholdChoresApp */;
+			targetProxy = CDE62E4CFE9200FA0D4AAFB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1345325DB2193FF296DF5EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		23055418FD990DDCB0227AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Used to manage Adam pickup and dropoff events.";
+				INFOPLIST_KEY_NSCalendarsWriteOnlyUsageDescription = "Used to create and edit Adam pickup and dropoff events.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bmad.householdchores;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		659256526AE8271FE846C038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		89907586FF2A33E92C1946AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bmad.householdchores.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HouseholdChoresApp.app/HouseholdChoresApp";
+			};
+			name = Release;
+		};
+		89AA66CF9D69E572B547F080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Used to manage Adam pickup and dropoff events.";
+				INFOPLIST_KEY_NSCalendarsWriteOnlyUsageDescription = "Used to create and edit Adam pickup and dropoff events.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bmad.householdchores;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B63AF704B09CB5A45FB55CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bmad.householdchores.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HouseholdChoresApp.app/HouseholdChoresApp";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AA8CFC985353390AD0EC85C /* Build configuration list for PBXNativeTarget "HouseholdChoresAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B63AF704B09CB5A45FB55CD /* Debug */,
+				89907586FF2A33E92C1946AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		755134C709FBD49888866134 /* Build configuration list for PBXNativeTarget "HouseholdChoresApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23055418FD990DDCB0227AED /* Debug */,
+				89AA66CF9D69E572B547F080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BC45A07F9F5C27CDE4CF5AED /* Build configuration list for PBXProject "HouseholdChoresApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1345325DB2193FF296DF5EE5 /* Debug */,
+				659256526AE8271FE846C038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A68DF27E51642B73C2256CD0 /* Project object */;
+}
