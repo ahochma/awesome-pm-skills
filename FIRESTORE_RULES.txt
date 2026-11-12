@@ -1,0 +1,43 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // helper: get current user's familyID
+    function getUserFamilyID() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.familyID;
+    }
+
+    // 1. Users Collection: Strict Privacy
+    // A user can only read or write their own document.
+    match /users/{userId} {
+      allow create: if request.auth.uid == userId;
+      allow read, update, delete: if request.auth.uid == userId;
+    }
+
+    // 2. Babies Collection: Family-Based Access
+    match /babies/{babyId} {
+      // Allow Read/Write if the user's familyID matches the baby's familyID
+      allow read, write: if resource.data.familyID == getUserFamilyID();
+      
+      // Allow Create if the new document's familyID matches the user's familyID
+      allow create: if request.resource.data.familyID == getUserFamilyID();
+
+      // 3. Subcollections (Logs & Growth)
+      // Inherit access from the parent baby document
+      match /logs/{logId} {
+        allow read, write: if get(/databases/$(database)/documents/babies/$(babyId)).data.familyID == getUserFamilyID();
+      }
+      
+      match /growth/{growthId} {
+        allow read, write: if get(/databases/$(database)/documents/babies/$(babyId)).data.familyID == getUserFamilyID();
+      }
+    }
+    
+    // 4. Invites (Future Proofing)
+    // Only allow creating invites for your own familyID
+    match /invites/{inviteId} {
+      allow create: if request.resource.data.fromFamilyID == getUserFamilyID();
+      allow read: if request.auth.token.email == resource.data.toEmail;
+    }
+  }
+}

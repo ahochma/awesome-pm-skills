@@ -12,10 +12,12 @@ final class SettingsViewModel: ObservableObject {
 
     private let modelContext: ModelContext
     private let dataTransferService: DataTransferServiceProtocol
+    let syncStatusViewModel: SyncStatusViewModel
 
-    init(modelContext: ModelContext, dataTransferService: DataTransferServiceProtocol) {
+    init(modelContext: ModelContext, dataTransferService: DataTransferServiceProtocol, cloudKitSyncService: CloudKitSyncServiceProtocol) {
         self.modelContext = modelContext
         self.dataTransferService = dataTransferService
+        self.syncStatusViewModel = SyncStatusViewModel(syncService: cloudKitSyncService)
     }
 
     func refresh() {

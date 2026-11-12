@@ -39,13 +39,24 @@ struct SettingsView: View {
                             } label: {
                                 Text("Save")
                                     .font(.subheadline.weight(.medium))
-                                    .foregroundStyle(.accentColor)
+                                    .foregroundStyle(Color.accentColor)
                             }
                         }
                     }
                 }
             } header: {
                 SectionHeaderView(title: "HOUSEHOLD MEMBERS", icon: "person.2")
+            }
+
+            // MARK: - CloudKit Sync Status
+            Section {
+                syncStatusRow
+            } header: {
+                SectionHeaderView(title: "CLOUD SYNC", icon: "icloud")
+            } footer: {
+                Text("Data syncs automatically between devices signed into the same iCloud account.")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
             }
 
             // MARK: - Data Transfer
@@ -131,7 +142,10 @@ struct SettingsView: View {
         }
         .listStyle(.insetGrouped)
         .navigationTitle("Settings")
-        .onAppear { viewModel.refresh() }
+        .onAppear {
+            viewModel.refresh()
+            viewModel.syncStatusViewModel.refresh()
+        }
         .fileExporter(
             isPresented: $exporting,
             document: exportDoc,
@@ -156,5 +170,39 @@ struct SettingsView: View {
         } message: {
             Text("This removes people, chores, completions, and monthly results. Default data will be re-seeded.")
         }
+    }
+    
+    // MARK: - Sync Status Row
+    
+    private var syncStatusRow: some View {
+        let syncVM = viewModel.syncStatusViewModel
+        return HStack(spacing: AppTheme.spacingMD) {
+            Image(systemName: syncVM.syncStatusIcon)
+                .foregroundStyle(syncVM.syncStatusColor)
+                .frame(width: 28)
+            
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Sync Status")
+                    .font(.subheadline.weight(.medium))
+                Text(syncVM.syncStatusText)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                Text(syncVM.accountStatusMessage)
+                    .font(.caption2)
+                    .foregroundStyle(.tertiary)
+            }
+            
+            Spacer()
+            
+            Button {
+                Haptics.light()
+                syncVM.refresh()
+            } label: {
+                Image(systemName: "arrow.clockwise")
+                    .font(.subheadline)
+                    .foregroundStyle(Color.accentColor)
+            }
+        }
+        .padding(.vertical, AppTheme.spacingXS)
     }
 }

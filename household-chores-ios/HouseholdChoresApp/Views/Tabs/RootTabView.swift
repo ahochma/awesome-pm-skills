@@ -47,7 +47,8 @@ struct RootTabView: View {
                 SettingsView(
                     viewModel: SettingsViewModel(
                         modelContext: container.modelContext,
-                        dataTransferService: container.dataTransferService
+                        dataTransferService: container.dataTransferService,
+                        cloudKitSyncService: container.cloudKitSyncService
                     )
                 )
             }

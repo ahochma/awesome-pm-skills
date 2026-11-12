@@ -245,7 +245,7 @@ struct ScoresView: View {
         } label: {
             HStack {
                 Image(systemName: "clock.arrow.circlepath")
-                    .foregroundStyle(.accentColor)
+                    .foregroundStyle(Color.accentColor)
                 Text("View completion history")
                     .font(.subheadline.weight(.medium))
                 Spacer()

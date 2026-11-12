@@ -107,7 +107,7 @@ struct CalendarView: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
-            .foregroundStyle(.accentColor)
+            .foregroundStyle(Color.accentColor)
         }
         .glassCard()
     }

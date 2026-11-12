@@ -3,11 +3,11 @@ import SwiftData
 
 @Model
 final class Chore {
-    @Attribute(.unique) var id: UUID
-    var title: String
-    var points: Int
+    var id: UUID = UUID()
+    var title: String = ""
+    var points: Int = 0
     var category: String?
-    var isActive: Bool
+    var isActive: Bool = true
 
     init(
         id: UUID = UUID(),

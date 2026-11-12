@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,10 +12,13 @@
 		0B4FA38E68217AA2044CCEA0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C60315FC0858B463787BC7A /* Person.swift */; };
 		10601A53203D8E354A0A95C2 /* ScoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60007CE902B980E341079296 /* ScoresViewModel.swift */; };
 		1B1664C3A1917A52065BCDAE /* MonthlyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A02C9313B4E1BAEFC4C6B9E /* MonthlyResult.swift */; };
+		23CDABB839C3522B60F00D0C /* CloudKitSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B962D20D29648A383745F2 /* CloudKitSyncTests.swift */; };
 		257644E98253501442FEF999 /* ChoresListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A29020EE5F3BBFF093C1E /* ChoresListView.swift */; };
+		2F13FEE3723A3127D7CE2B7F /* CloudKitSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4102CB460439AF28C60AD94E /* CloudKitSyncService.swift */; };
 		3674F7223C249660BB75FA93 /* ScoringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3FB1A1BCA166C88F68C59 /* ScoringService.swift */; };
 		38A94F27EE77E6D486C1F3C4 /* ChoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92607E7C7FA8704235FCEF3D /* ChoresViewModel.swift */; };
 		3B1729EA961169F064AB3C39 /* HouseholdChoresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912776500365CED7D68DE9B /* HouseholdChoresApp.swift */; };
+		3BB228F29404DF5E729979A8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE776F2273A72D2276BC1580 /* Theme.swift */; };
 		5EB7F5DB130E47561C812DC3 /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B920C6EEDE8EDC6C37771B /* Completion.swift */; };
 		6F641D998E70147724A91F33 /* JSONExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFB7049D627A1177347BC5 /* JSONExportDocument.swift */; };
 		70C02EF0455A172F283560F4 /* PersonPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889034088B40FDD5152E1EF /* PersonPickerView.swift */; };
@@ -30,6 +33,7 @@
 		BAD008358707114696C51E72 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A01862276CCD381601250D /* CalendarView.swift */; };
 		BE15ABC84D9ABC017853C31F /* DataTransferMergeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EE60209974A709BF999579 /* DataTransferMergeTests.swift */; };
 		C40B5291440DFF92995B31CE /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC5E926D8F80D2B6D45D4C /* CalendarViewModel.swift */; };
+		C584FB041321D7224889EB5C /* SyncStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02BB96F2B9F5137979F430 /* SyncStatusViewModel.swift */; };
 		D162DE20EBE2882D07C5CE39 /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406247FB6928F0FC2DD446E /* ScoresView.swift */; };
 		D4A207B5B23556A54C355780 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE49BA42E84E2887038D54 /* AppContainer.swift */; };
 		DE604D8E095747089308B41C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D920DE42CDAA7903E4B549B /* HomeView.swift */; };
@@ -55,16 +59,19 @@
 
 /* Begin PBXFileReference section */
 		067E4A31AA5DD7C59050E7D6 /* MonthKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthKeyTests.swift; sourceTree = "<group>"; };
-		0C6AD5739B3546BA29FA7A15 /* HouseholdChoresApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HouseholdChoresApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6AD5739B3546BA29FA7A15 /* HouseholdChoresApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseholdChoresApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E50F435B8030FC73A115833 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		14AC5E926D8F80D2B6D45D4C /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		196A0717B9273B08A1657935 /* ChoreEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreEditorView.swift; sourceTree = "<group>"; };
+		1B02BB96F2B9F5137979F430 /* SyncStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusViewModel.swift; sourceTree = "<group>"; };
 		24EBDF430AE8ADAE181F230F /* JSONImportParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONImportParser.swift; sourceTree = "<group>"; };
 		2D920DE42CDAA7903E4B549B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		32E91DF268D908617417064E /* Chore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chore.swift; sourceTree = "<group>"; };
 		360F5C4D9082567996BC33A6 /* HouseholdChoresAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HouseholdChoresAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD3CE1A6E1EA0791B737ABE /* ScoringServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringServiceTests.swift; sourceTree = "<group>"; };
+		4102CB460439AF28C60AD94E /* CloudKitSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitSyncService.swift; sourceTree = "<group>"; };
 		433C0B81E3EE1D35D79BECA9 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		47B962D20D29648A383745F2 /* CloudKitSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitSyncTests.swift; sourceTree = "<group>"; };
 		52577D38B006E7A7F95CA66A /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 		5AF59FE22A25B12F8F2C80CA /* AdamEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdamEventType.swift; sourceTree = "<group>"; };
 		5BFFB7049D627A1177347BC5 /* JSONExportDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONExportDocument.swift; sourceTree = "<group>"; };
@@ -75,6 +82,7 @@
 		6406247FB6928F0FC2DD446E /* ScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresView.swift; sourceTree = "<group>"; };
 		6A02C9313B4E1BAEFC4C6B9E /* MonthlyResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyResult.swift; sourceTree = "<group>"; };
 		6EEE49BA42E84E2887038D54 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		77EE602E3AC026E545964270 /* HouseholdChoresApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HouseholdChoresApp.entitlements; sourceTree = "<group>"; };
 		78B920C6EEDE8EDC6C37771B /* Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
 		80A01862276CCD381601250D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		86DE5C75F7CB520E14BF97FA /* MonthKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthKey.swift; sourceTree = "<group>"; };
@@ -85,6 +93,7 @@
 		98EE60209974A709BF999579 /* DataTransferMergeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferMergeTests.swift; sourceTree = "<group>"; };
 		9912776500365CED7D68DE9B /* HouseholdChoresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdChoresApp.swift; sourceTree = "<group>"; };
 		9B5689B3EC83E2D18065BA19 /* CalendarEventEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventEditorView.swift; sourceTree = "<group>"; };
+		AE776F2273A72D2276BC1580 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B8E2E4A8AE03A0B228D1DB65 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		B912CEEE37B87BF0892828B9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DD5A29020EE5F3BBFF093C1E /* ChoresListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresListView.swift; sourceTree = "<group>"; };
@@ -107,6 +116,7 @@
 			children = (
 				8B12395E2EACE74B9136961A /* MonthPickerView.swift */,
 				E889034088B40FDD5152E1EF /* PersonPickerView.swift */,
+				AE776F2273A72D2276BC1580 /* Theme.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -179,6 +189,7 @@
 				B912CEEE37B87BF0892828B9 /* HomeViewModel.swift */,
 				60007CE902B980E341079296 /* ScoresViewModel.swift */,
 				433C0B81E3EE1D35D79BECA9 /* SettingsViewModel.swift */,
+				1B02BB96F2B9F5137979F430 /* SyncStatusViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -213,6 +224,7 @@
 		93740BCD106EFC612FC1C4BA /* HouseholdChoresAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				47B962D20D29648A383745F2 /* CloudKitSyncTests.swift */,
 				98EE60209974A709BF999579 /* DataTransferMergeTests.swift */,
 				6401C2ECD42D6D2760FF164D /* MonthCloseTests.swift */,
 				067E4A31AA5DD7C59050E7D6 /* MonthKeyTests.swift */,
@@ -225,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				5C55EE54A8AAFB44A95D8952 /* CalendarService.swift */,
+				4102CB460439AF28C60AD94E /* CloudKitSyncService.swift */,
 				52577D38B006E7A7F95CA66A /* DataTransferService.swift */,
 				86DE5C75F7CB520E14BF97FA /* MonthKey.swift */,
 				87E3FB1A1BCA166C88F68C59 /* ScoringService.swift */,
@@ -245,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				6EEE49BA42E84E2887038D54 /* AppContainer.swift */,
+				77EE602E3AC026E545964270 /* HouseholdChoresApp.entitlements */,
 				9912776500365CED7D68DE9B /* HouseholdChoresApp.swift */,
 				1F2FBE2FC5EBF65A803F3A0D /* Models */,
 				973E01CFEC7048C7EE284054 /* Services */,
@@ -320,7 +334,6 @@
 			);
 			mainGroup = 277A08CA2785BBCC23147D63;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -345,6 +358,7 @@
 				E8839BCE85BF9F5D56153A13 /* ChoreEditorView.swift in Sources */,
 				257644E98253501442FEF999 /* ChoresListView.swift in Sources */,
 				38A94F27EE77E6D486C1F3C4 /* ChoresViewModel.swift in Sources */,
+				2F13FEE3723A3127D7CE2B7F /* CloudKitSyncService.swift in Sources */,
 				5EB7F5DB130E47561C812DC3 /* Completion.swift in Sources */,
 				ACC626631FC31BB28B33A968 /* DataTransferService.swift in Sources */,
 				FB19640DF26908D0C9B0B5C4 /* HistoryView.swift in Sources */,
@@ -365,6 +379,8 @@
 				79BE93EE71C62DB0D4FF5863 /* SeedDataLoader.swift in Sources */,
 				07B4F72ABBE4308540D27104 /* SettingsView.swift in Sources */,
 				EC1BAA9BBEA20B6F6F204573 /* SettingsViewModel.swift in Sources */,
+				C584FB041321D7224889EB5C /* SyncStatusViewModel.swift in Sources */,
+				3BB228F29404DF5E729979A8 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23CDABB839C3522B60F00D0C /* CloudKitSyncTests.swift in Sources */,
 				BE15ABC84D9ABC017853C31F /* DataTransferMergeTests.swift in Sources */,
 				E130C0841A56044BFC10DAC5 /* MonthCloseTests.swift in Sources */,
 				F3BCBA31406E64E852BCEAD1 /* MonthKeyTests.swift in Sources */,
@@ -458,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = MB63TDR842;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Used to manage Adam pickup and dropoff events.";
 				INFOPLIST_KEY_NSCalendarsWriteOnlyUsageDescription = "Used to create and edit Adam pickup and dropoff events.";
@@ -552,6 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = MB63TDR842;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Used to manage Adam pickup and dropoff events.";
 				INFOPLIST_KEY_NSCalendarsWriteOnlyUsageDescription = "Used to create and edit Adam pickup and dropoff events.";

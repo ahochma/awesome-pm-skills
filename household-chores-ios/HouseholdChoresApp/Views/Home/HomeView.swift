@@ -189,7 +189,7 @@ struct HomeView: View {
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
             withAnimation(.easeOut(duration: 0.3)) {
-                completedChoreIds.remove(chore.id)
+                _ = completedChoreIds.remove(chore.id)
             }
         }
     }

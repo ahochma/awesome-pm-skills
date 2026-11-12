@@ -52,9 +52,11 @@ final class ScoringService: ScoringServiceProtocol {
             throw ScoringError.invalidMonthKey(monthKey)
         }
 
+        let start = range.start
+        let end = range.end
         let descriptor = FetchDescriptor<Completion>(
             predicate: #Predicate<Completion> {
-                $0.completedAt >= range.start && $0.completedAt < range.end
+                $0.completedAt >= start && $0.completedAt < end
             }
         )
         let completions = try modelContext.fetch(descriptor)

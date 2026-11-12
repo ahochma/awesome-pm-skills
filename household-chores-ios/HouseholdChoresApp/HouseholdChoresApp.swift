@@ -6,16 +6,24 @@ struct HouseholdChoresApp: App {
     private let modelContainer: ModelContainer
 
     init() {
-        let schema = Schema([
-            Person.self,
-            Chore.self,
-            Completion.self,
-            MonthlyResult.self
-        ])
-        let config = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        // Ensure the Application Support directory exists before SwiftData/CoreData tries to write the store file.
+        let fileManager = FileManager.default
+        if let appSupportURL = fileManager.urls(for: .applicationSupportDirectory, in: .userDomainMask).first {
+            if !fileManager.fileExists(atPath: appSupportURL.path) {
+                try? fileManager.createDirectory(at: appSupportURL, withIntermediateDirectories: true)
+            }
+        }
 
         do {
-            modelContainer = try ModelContainer(for: schema, configurations: [config])
+            // Local-only SwiftData store
+            let localConfig = ModelConfiguration()
+            modelContainer = try ModelContainer(
+                for: Person.self,
+                    Chore.self,
+                    Completion.self,
+                    MonthlyResult.self,
+                configurations: localConfig
+            )
             SeedDataLoader.seedIfNeeded(modelContext: modelContainer.mainContext)
         } catch {
             fatalError("Failed to initialize model container: \(error)")

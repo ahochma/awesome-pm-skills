@@ -3,10 +3,10 @@ import SwiftData
 
 @Model
 final class MonthlyResult {
-    @Attribute(.unique) var monthKey: String
-    var winnerPersonIdsCSV: String
-    var pointsByPersonJSON: String
-    var closedAt: Date
+    var monthKey: String = ""
+    var winnerPersonIdsCSV: String = ""
+    var pointsByPersonJSON: String = "{}"
+    var closedAt: Date = Date()
 
     init(
         monthKey: String,

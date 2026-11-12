@@ -3,8 +3,8 @@ import SwiftData
 
 @Model
 final class Person {
-    @Attribute(.unique) var id: UUID
-    var name: String
+    var id: UUID = UUID()
+    var name: String = ""
     var avatar: String?
     var colorHex: String?
 

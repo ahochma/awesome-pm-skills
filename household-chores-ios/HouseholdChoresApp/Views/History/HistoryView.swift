@@ -81,8 +81,10 @@ struct HistoryView: View {
         people = (try? modelContext.fetch(FetchDescriptor<Person>()).sorted(by: { $0.name < $1.name })) ?? []
 
         guard let range = MonthKey.monthRange(for: monthKey) else { return }
+        let start = range.start
+        let end = range.end
         let descriptor = FetchDescriptor<Completion>(
-            predicate: #Predicate<Completion> { $0.completedAt >= range.start && $0.completedAt < range.end }
+            predicate: #Predicate<Completion> { $0.completedAt >= start && $0.completedAt < end }
         )
         completions = (try? modelContext.fetch(descriptor))?.sorted(by: { $0.completedAt > $1.completedAt }) ?? []
     }

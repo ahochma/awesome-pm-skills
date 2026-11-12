@@ -3,12 +3,12 @@ import SwiftData
 
 @Model
 final class Completion {
-    @Attribute(.unique) var id: UUID
-    var choreId: UUID
-    var choreTitleSnapshot: String
-    var pointsSnapshot: Int
-    var personId: UUID
-    var completedAt: Date
+    var id: UUID = UUID()
+    var choreId: UUID = UUID()
+    var choreTitleSnapshot: String = ""
+    var pointsSnapshot: Int = 0
+    var personId: UUID = UUID()
+    var completedAt: Date = Date()
 
     init(
         id: UUID = UUID(),

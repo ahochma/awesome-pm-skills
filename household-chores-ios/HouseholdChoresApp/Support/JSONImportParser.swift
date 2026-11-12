@@ -2,6 +2,10 @@ import Foundation
 
 enum JSONImportParser {
     static func loadData(from url: URL) throws -> Data {
-        try Data(contentsOf: url)
+        let accessed = url.startAccessingSecurityScopedResource()
+        defer {
+            if accessed { url.stopAccessingSecurityScopedResource() }
+        }
+        return try Data(contentsOf: url)
     }
 }
